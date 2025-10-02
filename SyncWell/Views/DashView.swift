@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct DashView: View {
+    @StateObject var healthKit = HealthKitManager.shared
+    
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
